@@ -20,7 +20,7 @@ GTS SDK 2.9.0 版本开始提供对 Seata 的兼容支持。关于 Seata 的更�
 
 ## 步骤一：下载样例工程
 
-样例工程详情请参见 [gts-sample-seata](https://code.aliyun.com/txc-console/gts-sample-seata)。
+样例工程详情请参见 [gts-sample-seata](https://code.aliyun.com/txc-console/gts-sample-seata/repository/archive.zip?ref=master)。
 
 ## 步骤二：构建样例工程
 
