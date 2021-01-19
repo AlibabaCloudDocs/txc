@@ -58,7 +58,7 @@ GTS 将保障整个服务调用链路上的数据一致性。
     3.  重新执行 `mvn clean install` 命令。
     运行成功后`common/lib`目录下会生成 GTS 的 SDK 包，包括：
 
-    -   客户端主包：~txc-client-$\{gts.sdk.version\}.jar
+    -   客户端主包：txc-client-$\{gts.sdk.version\}.jar
     -   Spring Cloud 原生支持包：txc-client-springcloud-$\{gts.sdk.version\}.jar
 
 ## 步骤三：导入样例工程到 IDE
@@ -90,5 +90,5 @@ GTS 将保障整个服务调用链路上的数据一致性。
     -   在本地运行通过公网访问 GTS 服务时，请使用公共的实例 `txc_test_public.1129361738553704.QD` 并配合使用下面的 `spring.cloud.txc.url` 配置。
     -   在正式环境 ECS 上运行时，请使用您订购的 GTS 服务实例全名，并配合使用下面的 `spring.cloud.txc.accessKey` 和 `spring.cloud.txc.accessKey` 配置。
 -   `spring.cloud.txc.url`：公网访问 GTS 服务的接入地址，固定值 `https://test-cs-gts.aliyuncs.com` 。这个配置仅在本地公网访问时需要。
--   `spring.cloud.txc.accessKey`和`spring.cloud.txc.secretKey`：在 ECS 上正式运行，这里配置您 GTS 服务实例使用者的 AK 和 SK 用于鉴权。默认是使用订购 GTS 服务实例的用户（即实例全名中间部分 **账号ID** 对应用户）的 AK 和 SK。也可以使用 RAM 授权的用户 AK 和 SK，具体方法请参见[为 RAM 用户授权事务分组](/cn.zh-CN/最佳实践/为 RAM 用户授权事务分组.md)。
+-   `spring.cloud.txc.accessKey`和`spring.cloud.txc.secretKey`：在 ECS 上正式运行，这里配置您 GTS 服务实例使用者的 AccessKey ID 和 AccessKey Secret 用于鉴权。默认是使用订购 GTS 服务实例的用户（即实例全名中间部分**账号ID** 对应用户）的 AccessKey ID 和 AccessKey Secret。也可以使用 RAM 授权的用户 AccessKey ID 和 AccessKey Secret，具体方法请参见[为 RAM 用户授权事务分组](/cn.zh-CN/最佳实践/为 RAM 用户授权事务分组.md)。
 
